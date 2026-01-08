@@ -1,0 +1,62 @@
+/* Reset básico para tirar margens padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f9; /* Cor de fundo suave */
+  color: #333;
+  text-align: center;
+}
+
+/* Estilo do Cabeçalho */
+header {
+  padding: 40px 20px;
+  background-color: #222;
+  color: #fff;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* Estilo da Galeria (Grid) */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilo dos Cards de Foto */
+.photo-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 300px; /* Tamanho fixo ou use % */
+  transition: transform 0.2s;
+}
+
+.photo-card:hover {
+  transform: translateY(-5px); /* Efeito de subir ao passar o mouse */
+}
+
+/* Estilo do Rodapé */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #222;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
